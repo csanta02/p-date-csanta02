@@ -322,4 +322,239 @@ total = meses + dias;
 
 return total;
 }
+
+//Generar una fecha aleatoria igual a otra dentro del mismo año utilizando while.
+public int randomDate(){
+int dia = (int) Math.random() * 31;
+int mes = (int) Math.random() * 12;
+int contador = 0;
+while(dia != this.day && mes != this.month){
+contador = contador + 1;
+}
+return contador;
+}
+
+//Generar una fecha aleatoria igual a otra dentro del mismo año utilizando do while. 
+public int randomDateDoWhile(){
+int dia = (int) Math.random() * 31;
+int mes = (int) Math.random() * 12;
+int contador = 0;
+do{contador = contador + 1;
+}while(dia != this.day && mes != this.month);
+return contador;
+}
+
+//Día de la semana para una fecha dada.
+private String dayWeekYear;
+public String dayWeek(){
+int j = this.day % 7;
+int i = this.month;
+switch(i){case 1: switch(j){
+			case 1: System.out.println("Domingo");
+				break;
+			case 2: System.out.println("Lunes");
+				break;
+			case 3: System.out.println("Martes");
+				break;
+			case 4: System.out.println("Miercoles");
+				break;
+			case 5: System.out.println("Jueves");
+				break;
+			case 6: System.out.println("Viernes");
+				break;
+			case 7: System.out.println("Sabado");
+				break;
+			}
+		break;
+		case 2: switch(j){
+			case 1: System.out.println("Miercoles");
+				break;
+			case 2: System.out.println("Jueves");
+				break;
+			case 3: System.out.println("Viernes");
+				break;
+			case 4: System.out.println("Sabado");
+				break;
+			case 5: System.out.println("Domingo");
+				break;
+			case 6: System.out.println("Lunes");
+				break;
+			case 7: System.out.println("Martes");
+				break;
+			}
+			break;
+		case 3: switch(j){
+			case 1: System.out.println("Miercoles");
+				break;
+			case 2: System.out.println("Jueves");
+				break;
+			case 3: System.out.println("Viernes");
+				break;
+			case 4: System.out.println("Sabado");
+				break;
+			case 5: System.out.println("Domingo");
+				break;
+			case 6: System.out.println("Lunes");
+				break;
+			case 7: System.out.println("Martes");
+				break;
+			}
+			break;
+		case 4:  switch(j){
+			case 1: System.out.println("Sabado");
+				break;
+			case 2: System.out.println("Domingo");
+				break;
+			case 3: System.out.println("Lunes");
+				break;
+			case 4: System.out.println("Martes");
+				break;
+			case 5: System.out.println("Miercoles");
+				break;
+			case 6: System.out.println("Jueves");
+				break;
+			case 7: System.out.println("Viernes");
+				break;
+			}
+			break;
+		case 5:  switch(j){
+			case 1: System.out.println("Lunes");
+				break;
+			case 2: System.out.println("Martes");
+				break;
+			case 3: System.out.println("Miercoles");
+				break;
+			case 4: System.out.println("Jueves");
+				break;
+			case 5: System.out.println("Viernes");
+				break;
+			case 6: System.out.println("Sabado");
+				break;
+			case 7: System.out.println("Domingo");
+				break;
+			}
+			break;
+		case 6:  switch(j){
+			case 1: System.out.println("Jueves");
+				break;
+			case 2: System.out.println("Viernes");
+				break;
+			case 3: System.out.println("Sabado");
+				break;
+			case 4: System.out.println("Domingo");
+				break;
+			case 5: System.out.println("Lunes");
+				break;
+			case 6: System.out.println("Martes");
+				break;
+			case 7: System.out.println("Miercoles");
+				break;
+			}
+			break;
+		case 7: switch(j){
+			case 1: System.out.println("Sabado");
+				break;
+			case 2: System.out.println("Domingo");
+				break;
+			case 3: System.out.println("Lunes");
+				break;
+			case 4: System.out.println("Martes");
+				break;
+			case 5: System.out.println("Miercoles");
+				break;
+			case 6: System.out.println("Jueves");
+				break;
+			case 7: System.out.println("Viernes");
+				break;
+			}
+			break;
+		case 8: switch(j){
+			case 1: System.out.println("Martes");
+				break;
+			case 2: System.out.println("Miercoles");
+				break;
+			case 3: System.out.println("Jueves");
+				break;
+			case 4: System.out.println("Viernes");
+				break;
+			case 5: System.out.println("Sabado");
+				break;
+			case 6: System.out.println("Domingo");
+				break;
+			case 7: System.out.println("Lunes");
+				break;
+			}
+			break;
+		case 9: switch(j){
+			case 1: System.out.println("Viernes");
+				break;
+			case 2: System.out.println("Sabado");
+				break;
+			case 3: System.out.println("Domingo");
+				break;
+			case 4: System.out.println("Lunes");
+				break;
+			case 5: System.out.println("Martes");
+				break;
+			case 6: System.out.println("Miercoles");
+				break;
+			case 7: System.out.println("Jueves");
+				break;
+			}
+			break;
+		case 10: case 1: System.out.println("Domingo");
+				break;
+			case 2: System.out.println("Lunes");
+				break;
+			case 3: System.out.println("Martes");
+				break;
+			case 4: System.out.println("Miercoles");
+				break;
+			case 5: System.out.println("Jueves");
+				break;
+			case 6: System.out.println("Viernes");
+				break;
+			case 7: System.out.println("Sabado");
+				break;
+			}
+			break;
+		case 11: switch(j){
+			case 1: System.out.println("Miercoles");
+				break;
+			case 2: System.out.println("Jueves");
+				break;
+			case 3: System.out.println("Viernes");
+				break;
+			case 4: System.out.println("Sabado");
+				break;
+			case 5: System.out.println("Domingo");
+				break;
+			case 6: System.out.println("Lunes");
+				break;
+			case 7: System.out.println("Martes");
+				break;
+			}
+			break;
+
+		case 12: switch(j){
+			case 1: System.out.println("Viernes");
+				break;
+			case 2: System.out.println("Sabado");
+				break;
+			case 3: System.out.println("Domingo");
+				break;
+			case 4: System.out.println("Lunes");
+				break;
+			case 5: System.out.println("Martes");
+				break;
+			case 6: System.out.println("Miercoles");
+				break;
+			case 7: System.out.println("Jueves");
+				break;
+			}
+			break;
+	}
+return dayWeekYear;
+
+
 }
