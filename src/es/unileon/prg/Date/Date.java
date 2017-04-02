@@ -62,4 +62,25 @@ public boolean isSame(Date another){
 	return this.day != another.getDay() || this.month != another.getMonth() || this.year != another.getYear();}
 }
 
+//Crear los métodos isSame utilizando métodos diferentes.
+//Empleando while.
+/*public boolean isSameYear(Date another){
+	while(this.year == another.getYear()){System.out.println("Es el mismo año.\n");}
+	return this.year == another.getYear();
+}
+
+//Empleando do while.
+public boolean isSameMonth(Date another){
+	do{System.out.println("Es el mismo mes.\n");}while(this.month == another.getMonth());
+	return this.month == another.getMonth();
+}
+//Empleando equals.
+public boolean isSameDay(Date another){
+int day1 = this.day;
+int day2 = another.getDay();
+day1.equals(day2);
+return this.day == another.getDay();
+}
+public boolean isSame(Date another){
+return this.day == another.getDay() && this.month == another.getMonth() && this.year == another.getYear();}*/
 }
