@@ -276,4 +276,37 @@ int dias = 0;
 	}
 return this.day + "/" + this.month + "/" + this.year;
 }
+
+//Meses con el mismo número de días que el mes dado. 
+private String monthsSameDay;
+public String monthsSameDays(){
+int j = this.month;
+	switch(j){
+		case 1: System.out.println("Enero tiene el mismo número de días que marzo, mayo, julio, agosto, octubre y diciembre.\n");
+			break;
+		case 2: System.out.println("No hay ningún mes con el mismo número de días que febrero.\n");
+			break;
+		case 3: System.out.println("Marzo tiene el mismo número de días que enero, mayo, julio, agosto, octubre y diciembre.\n");
+			break;
+		case 4: System.out.println("Abril tiene el mismo número de días que junio, septiembre y noviembre.\n");
+			break;
+		case 5: System.out.println("Mayo tiene el mismo número de días que enero, marzo, julio, agosto, octubre y diciembre.\n");
+			break;
+		case 6: System.out.println("Junio tiene el mismo número de días que abril, septiembre y noviembre.\n");
+			break;
+		case 7: System.out.println("Julio tiene el mismo número de días que enero, marzo, mayo, agosto, octubre y diciembre.\n");
+			break;
+		case 8: System.out.println("Agosto tiene el mismo número de días que enero, marzo, mayo, julio, octubre y diciembre.\n");
+			break;
+		case 9: System.out.println("Septiembre tiene el mismo número de días que abril, junio y noviembre.\n");
+			break;
+		case 10: System.out.println("Octubre tiene el mismo número de días que enero, marzo, mayo, julio, agosto y diciembre.\n");
+			break;
+		case 11: System.out.println("Noviembre tiene el mismo número de días que abril, junio y septiembre.\n");
+			break;
+		case 12: System.out.println("Diciembre tiene el mismo número de días que enero, marzo, mayo, julio, agosto y octubre.\n");
+			break;
+	}
+return monthsSameDay;
+}
 }
