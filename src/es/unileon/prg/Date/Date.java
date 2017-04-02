@@ -124,10 +124,10 @@ public String dayOfTheMonth(){
 			break;
 		case 2: if(this.year % 4 == 0 && (this.year % 100 != 0 || this.year % 400 == 0)){
 				if(this.day > 0 && this.day <= 29){System.out.println("El día pertenece al mes de Febrero.\n");}
-				else{System.out.println("El día no pertenece al mes de Enero, debe encontrarse entre 1 y 29.\n");}
+				else{System.out.println("El día no pertenece al mes de Febrero, debe encontrarse entre 1 y 29.\n");}
 			}else{
 				if(this.day > 0 && this.day <= 28){System.out.println("El día pertenece al mes de Febrero.\n");}
-				else{System.out.println("El día no pertenece al mes de Enero, debe encontrarse entre 1 y 28.\n");}
+				else{System.out.println("El día no pertenece al mes de Febrero, debe encontrarse entre 1 y 28.\n");}
 			}
 			break;
 		case 3: if(this.day > 0 && this.day <= 31){System.out.println("El día pertenece al mes de Marzo.\n");}
@@ -202,7 +202,7 @@ private int monthsUntilEnd;
 public int monthsUntilEndOfYear(){
 int mes = 0;
 for(int i = this.month; i <= 12; i++){
-mes = mes + i;
+mes = mes + 1;
 }
 System.out.println("Quedan " + mes + "meses.\n");
 return monthsUntilEnd;
@@ -210,6 +210,70 @@ return monthsUntilEnd;
 
 //Método que imprima una fecha.
 public String printDate (){
+return this.day + "/" + this.month + "/" + this.year;
+}
+
+//Método que desde una fecha imprima todas las fechas hasta el fin del mes.
+public String printDatesUntilEndMonth(){
+int j = this.month;
+int i;
+int dias = 0;
+	switch(j){
+		case 1: if(this.day > 0 && this.day <= 31){for(i = this.day; i <= 31; i++){dias = dias + 1;
+			System.out.println(dias + "/" + this.month + "/" + this.year);}}
+			else{System.out.println("El día no pertenece al mes de Enero, debe encontrarse entre 1 y 31.\n");}
+			break;
+		case 2: if(this.year % 4 == 0 && (this.year % 100 != 0 || this.year % 400 == 0)){
+				if(this.day > 0 && this.day <= 29){for(i = this.day; i <= 29; i++){dias = dias + 1;
+				System.out.println(dias + "/" + this.month + "/" + this.year);}}
+				else{System.out.println("El día no pertenece al mes de Febrero, debe encontrarse entre 1 y 29.\n");}
+			}else{
+				if(this.day > 0 && this.day <= 28){for(i = this.day; i <= 28; i++){dias = dias + 1;
+				System.out.println(dias + "/" + this.month + "/" + this.year);}}
+				else{System.out.println("El día no pertenece al mes de Febrero, debe encontrarse entre 1 y 28.\n");}
+			}
+			break;
+		case 3: if(this.day > 0 && this.day <= 31){for(i = this.day; i <= 31; i++){dias = dias + 1;
+			System.out.println(dias + "/" + this.month + "/" + this.year);}}
+			else{System.out.println("El día no pertenece al mes de Marzo, debe encontrarse entre 1 y 31.\n");}
+			break;
+		case 4: if(this.day > 0 && this.day <= 30){for(i = this.day; i <= 30; i++){dias = dias + 1;
+			System.out.println(dias + "/" + this.month + "/" + this.year);}}
+			else{System.out.println("El día no pertenece al mes de Abril, debe encontrarse entre 1 y 30.\n");}
+			break;
+		case 5: if(this.day > 0 && this.day <= 31){for(i = this.day; i <= 31; i++){dias = dias + 1;
+			System.out.println(dias + "/" + this.month + "/" + this.year);}}
+			else{System.out.println("El día no pertenece al mes de Mayo, debe encontrarse entre 1 y 31.\n");}
+			break;
+		case 6: if(this.day > 0 && this.day <= 30){for(i = this.day; i <= 30; i++){dias = dias + 1;
+			System.out.println(dias + "/" + this.month + "/" + this.year);}}
+			else{System.out.println("El día no pertenece al mes de Junio, debe encontrarse entre 1 y 30.\n");}
+			break;
+		case 7: if(this.day > 0 && this.day <= 31){for(i = this.day; i <= 31; i++){dias = dias + 1;
+			System.out.println(dias + "/" + this.month + "/" + this.year);}}
+			else{System.out.println("El día no pertenece al mes de Julio, debe encontrarse entre 1 y 31.\n");}
+			break;
+		case 8: if(this.day > 0 && this.day <= 31){for(i = this.day; i <= 31; i++){dias = dias + 1;
+			System.out.println(dias + "/" + this.month + "/" + this.year);}}
+			else{System.out.println("El día no pertenece al mes de Agosto, debe encontrarse entre 1 y 31.\n");}
+			break;
+		case 9: if(this.day > 0 && this.day <= 30){for(i = this.day; i <= 30; i++){dias = dias + 1;
+			System.out.println(dias + "/" + this.month + "/" + this.year);}}
+			else{System.out.println("El día no pertenece al mes de Septiembre, debe encontrarse entre 1 y 30.\n");}
+			break;
+		case 10: if(this.day > 0 && this.day <= 31){for(i = this.day; i <= 31; i++){dias = dias + 1;
+			System.out.println(dias + "/" + this.month + "/" + this.year);}}
+			else{System.out.println("El día no pertenece al mes de Octubre, debe encontrarse entre 1 y 31.\n");}
+			break;
+		case 11: if(this.day > 0 && this.day <= 30){for(i = this.day; i <= 30; i++){dias = dias + 1;
+			System.out.println(dias + "/" + this.month + "/" + this.year);}}
+			else{System.out.println("El día no pertenece al mes de Noviembre, debe encontrarse entre 1 y 30.\n");}
+			break;
+		case 12: if(this.day > 0 && this.day <= 31){for(i = this.day; i <= 31; i++){dias = dias + 1;
+			System.out.println(dias + "/" + this.month + "/" + this.year);}}
+			else{System.out.println("El día no pertenece al mes de Diciembre, debe encontrarse entre 1 y 31.\n");}
+			break;
+	}
 return this.day + "/" + this.month + "/" + this.year;
 }
 }
