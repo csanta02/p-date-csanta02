@@ -15,9 +15,6 @@ this.year=_year;
 
 }
 
-public String toString (){
-return this.day + "/" + this.month + "/" + this.year;
-}
 
 //Métodos get.
 public int getDay(){
@@ -83,6 +80,7 @@ return this.day == another.getDay();
 }
 public boolean isSame(Date another){
 return this.day == another.getDay() && this.month == another.getMonth() && this.year == another.getYear();}*/
+
 //Método que imprima el nombre del mes.
 private String nameM;
 public String nameMonth(){
@@ -115,6 +113,8 @@ public String nameMonth(){
 	}
 return nameM;
 }
+
+//Método que indique si el día pertenece al mes.
 private String dayOfTheM;
 public String dayOfTheMonth(){
 	int j = this.month;
@@ -163,6 +163,8 @@ public String dayOfTheMonth(){
 	}
 return dayOfTheM;
 }
+
+//Método que indique a que estación pertenece cada mes.
 private String season;
 public String yearSeason(){
 int j = this.month;
@@ -194,6 +196,8 @@ int j = this.month;
 	}
 return season;
 }
+
+//Método que indique cuantos meses faltan para el fin del año desde un mes dado. 
 private int monthsUntilEnd;
 public int monthsUntilEndOfYear(){
 int mes = 0;
@@ -202,5 +206,10 @@ mes = mes + i;
 }
 System.out.println("Quedan " + mes + "meses.\n");
 return monthsUntilEnd;
+}
+
+//Método que imprima una fecha.
+public String printDate (){
+return this.day + "/" + this.month + "/" + this.year;
 }
 }
