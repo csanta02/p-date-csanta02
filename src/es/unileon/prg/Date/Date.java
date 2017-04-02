@@ -309,4 +309,17 @@ int j = this.month;
 	}
 return monthsSameDay;
 }
+
+//Método que cuente los días desde el inicio del año hasta una fecha.
+
+public int daysSinceBeginOfYear(){
+int dias = 0; 
+int meses = 0;
+int total; 
+for(int i = 0; i <= this.day; i++){dias = dias + 1;}
+for(int j = 0; j <= this.month; j++){meses = meses + 1;}
+total = meses + dias; 
+
+return total;
+}
 }
