@@ -83,4 +83,36 @@ return this.day == another.getDay();
 }
 public boolean isSame(Date another){
 return this.day == another.getDay() && this.month == another.getMonth() && this.year == another.getYear();}*/
+//Método que imprima el nombre del mes.
+private String nameM;
+public String nameMonth(){
+	int j = this.month;
+	switch(j){
+		case 1: System.out.println("Enero\n");
+			break;
+		case 2: System.out.println("Febrero\n");
+			break;
+		case 3: System.out.println("Marzo\n");
+			break;
+		case 4: System.out.println("Abril\n");
+			break;
+		case 5: System.out.println("Mayo\n");
+			break;
+		case 6: System.out.println("Junio\n");
+			break;
+		case 7: System.out.println("Julio\n");
+			break;
+		case 8: System.out.println("Agosto\n");
+			break;
+		case 9: System.out.println("Septiembre\n");
+			break;
+		case 10: System.out.println("Octubre\n");
+			break;
+		case 11: System.out.println("Noviembre\n");
+			break;
+		case 12: System.out.println("Diciembre\n");
+			break;
+	}
+return nameM;
+}
 }
