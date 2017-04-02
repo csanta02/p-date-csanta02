@@ -194,4 +194,13 @@ int j = this.month;
 	}
 return season;
 }
+private int monthsUntilEnd;
+public int monthsUntilEndOfYear(){
+int mes = 0;
+for(int i = this.month; i <= 12; i++){
+mes = mes + i;
+}
+System.out.println("Quedan " + mes + "meses.\n");
+return monthsUntilEnd;
+}
 }
