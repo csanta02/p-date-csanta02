@@ -163,5 +163,35 @@ public String dayOfTheMonth(){
 	}
 return dayOfTheM;
 }
-
+private String season;
+public String yearSeason(){
+int j = this.month;
+	switch(j){
+		case 1: System.out.println("Invierno\n");
+			break;
+		case 2: System.out.println("Invierno\n");
+			break;
+		case 3: System.out.println("Primavera\n");
+			break;
+		case 4: System.out.println("Primavera\n");
+			break;
+		case 5: System.out.println("Primavera\n");
+			break;
+		case 6: System.out.println("Verano\n");
+			break;
+		case 7: System.out.println("Verano\n");
+			break;
+		case 8: System.out.println("Verano\n");
+			break;
+		case 9: System.out.println("Otoño\n");
+			break;
+		case 10: System.out.println("Otoño\n");
+			break;
+		case 11: System.out.println("Otoño\n");
+			break;
+		case 12: System.out.println("Invierno\n");
+			break;
+	}
+return season;
+}
 }
